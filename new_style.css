@@ -1,0 +1,175 @@
+*{
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	margin: 0px;
+	padding: 0px;
+	background: #2c395c;
+}
+h1{
+	font-family: 'Ovo', serif;
+	font-size: 72px;
+	margin:10px;
+	font-weight: normal;
+	color:white;
+}
+a{
+	color:#CCC;
+}
+
+h1 a{
+	text-decoration: none;
+	color:white;
+}
+#content{
+}
+#input-wrapper{
+	position: relative;
+	width:100%;
+	margin-bottom: 10px;
+	z-index: 3;
+}
+#sentence{
+	width:100%;
+	font-size: 20px;
+	background:#161c2e; 
+	border:none;
+	padding: 5px;
+	color:#CCC;
+	z-index: 1;
+	font-family: 'Ovo', serif;
+}
+#sentence:focus{
+	outline:none;
+	border-bottom: 2px solid #0099cc;
+}
+#translate{
+	font-size: 20px;
+	color:#FFF;
+	padding:5px 15px 5px 15px;
+	position: absolute;
+	z-index:2;
+	right:0px;
+	top:0px;
+	margin:0px;
+	background: #0099cc;
+	border:none;
+	font-family: 'Ovo', serif;
+	cursor:pointer;
+}
+#results{
+	padding-bottom: 45px;
+}
+	.word{
+		display:inline-block;
+		vertical-align: top;
+	}
+	.result{
+		background: #CCC;
+		display:inline-block;
+		vertical-align: top;
+		/*float:left;*/
+		margin:5px;
+		z-index:1;
+	}
+		.top{
+			position: relative;
+			top:0px;
+			background: #DDD;
+			padding:5px;
+			font-size: 14px;
+		}
+		.description{
+			padding:10px;	
+		}
+#footer{
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	padding: 10px;
+	color:white;
+	background: #2c395c;
+	z-index:2;
+}
+/* parts of speech */
+/* -d refers to .description area */
+.v{ /* verb */
+	background: #59edad;
+}
+	.v-d{ 
+		background: #f1fef8;
+	}
+.vpar{ /* Verb Participle */
+	background: #80baa1;
+}
+	.vpar-d{
+		background: #d5ebe1;
+	}
+.adv{ /* adverb */
+	background: #93dbd2;
+}
+	.adv-d{ 
+		background: #d8f3f0;
+	}
+.n{ /* noun */
+	background: #a3d2e3;
+}
+	.n-d{ /* noun */
+		background: #e2eff3;
+	}
+.pron{ /* pronoun */
+	background: #89a3c4;
+}
+	.pron-d{
+		background: #dfe7f1;
+	}
+.adj{ /* adjective */
+	background: #ffcc9b;
+}
+	.adj-d{
+		background: #f6eade;
+	}
+.supine{ /* supine */
+	background: #e8dfbd;
+}
+	.supine-d{
+		background: #f6f3ea;
+	}
+.conj{ /* conjunction */
+	background: #d086ba;
+}
+	.conj-d{ 
+		background: #eed2e6;
+	}
+.interj{ /* interjection */
+	background: #e28787;
+}
+	.interj-d{
+		background: #f5dbdb;
+	}
+.num{ /* number */
+	background: #9eacb6;
+}
+	.num-d{
+		background: #d2dce3;
+	}
+.prep{ /* preposition */
+	background: #FFF;
+}
+	.prep-d{ /* preposition */
+		background: #f1f2f2;
+	}
+.x{ /* unknown */
+	background: #727272;
+}
+	.x-d{
+		background: #979797;
+	}
+.highlight{
+	background-color: rgba(0,0,0, 0.1);
+	font-weight: 400;
+	padding:1px 3px;
+}
